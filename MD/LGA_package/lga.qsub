@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#PBS -lnodes=32
+#PBS -lwalltime=05:00:00
+#PBS -N test_lga
+#PBS -e test_lga.err
+#PBS -o test_lga.out
+
+cd /home/juami/LGA_FOLDPLOT_PACKAGE/LGA_package
+module load gromacs/4.5.5
+
+bash run_test

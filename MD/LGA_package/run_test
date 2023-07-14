@@ -1,0 +1,18 @@
+ulimit -s unlimited
+
+#cd /home/juami/LGA_FOLDPLOT_PACKAGE/LGA_package
+
+for file in ANALYSIS/pdb/snapshots/*.pdb
+do
+ ./runlga.mol_mol.pl "$file" ANALYSIS/pdb/native/frame0.pdb -3 -gdc -o2
+done
+
+mv RESULTS/* ANALYSIS/lga
+
+
+### bottom part for individual lga plots (Einzelne figures) 
+#for file in ANALYSIS/lga/*.res
+#do
+ # do something on $file
+# ./parse_lga.py "$file"
+#done

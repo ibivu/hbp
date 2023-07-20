@@ -1,0 +1,2 @@
+Break_extension	LC	Break_force	Force_drop	Fitting_error	Max_extension
+40.206594	49.040501	104.749560	100.169724	3.456362	45.194622
